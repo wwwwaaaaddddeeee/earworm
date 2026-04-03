@@ -1,5 +1,7 @@
 # use-earworm
 
+![use-earworm preview](preview.jpeg)
+
 A minimal Spotify now-playing widget for React. Shows what you're currently listening to or your last played track.
 
 ## Install
