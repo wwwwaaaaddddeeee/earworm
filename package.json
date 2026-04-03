@@ -1,5 +1,5 @@
 {
-  "name": "earworm",
+  "name": "use-earworm",
   "version": "1.0.0",
   "description": "A minimal Spotify now-playing widget for React",
   "main": "dist/index.js",

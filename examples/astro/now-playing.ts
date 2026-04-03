@@ -1,6 +1,6 @@
 // src/pages/api/spotify/now-playing.ts
 import type { APIRoute } from "astro";
-import { getNowPlaying } from "earworm/api";
+import { getNowPlaying } from "use-earworm/api";
 
 export const prerender = false;
 

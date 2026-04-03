@@ -1,11 +1,11 @@
-# earworm
+# use-earworm
 
 A minimal Spotify now-playing widget for React. Shows what you're currently listening to or your last played track.
 
 ## Install
 
 ```bash
-npm i earworm
+npm i use-earworm
 ```
 
 ## Quick Start
@@ -27,13 +27,13 @@ SPOTIFY_REFRESH_TOKEN=your_refresh_token
 
 ### 3. Create an API route
 
-The widget fetches data from an API route you create. earworm exports a `getNowPlaying` helper to make this easy.
+The widget fetches data from an API route you create. use-earworm exports a `getNowPlaying` helper to make this easy.
 
 **Next.js** (App Router)
 
 ```ts
 // app/api/spotify/now-playing/route.ts
-import { getNowPlaying } from "earworm/api";
+import { getNowPlaying } from "use-earworm/api";
 
 export async function GET() {
   try {
@@ -57,7 +57,7 @@ export async function GET() {
 ```ts
 // src/pages/api/spotify/now-playing.ts
 import type { APIRoute } from "astro";
-import { getNowPlaying } from "earworm/api";
+import { getNowPlaying } from "use-earworm/api";
 
 export const prerender = false;
 
@@ -86,7 +86,7 @@ export const GET: APIRoute = async () => {
 ### 4. Add the component
 
 ```tsx
-import { Earworm } from "earworm";
+import { Earworm } from "use-earworm";
 
 export default function Page() {
   return <Earworm />;

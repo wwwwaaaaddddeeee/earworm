@@ -1,5 +1,5 @@
 // app/api/spotify/now-playing/route.ts
-import { getNowPlaying } from "earworm/api";
+import { getNowPlaying } from "use-earworm/api";
 
 export async function GET() {
   try {
