@@ -1,0 +1,52 @@
+{
+  "name": "earworm",
+  "version": "1.0.0",
+  "description": "A minimal Spotify now-playing widget for React",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./api": {
+      "types": "./dist/api.d.ts",
+      "import": "./dist/api.mjs",
+      "require": "./dist/api.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "spotify",
+    "now-playing",
+    "react",
+    "widget",
+    "music"
+  ],
+  "author": "Wade",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwwwaaaaddddeeee/earworm"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "react": "^19",
+    "tsup": "^8",
+    "typescript": "^5"
+  }
+}
